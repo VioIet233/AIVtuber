@@ -78,7 +78,7 @@ class MyHandler(blivedm.BaseHandler):
     async def _do_tts(self, task_id: str):
         task_status = ''
         get_cnt = 0
-        await asyncio.sleep(3)
+        await asyncio.sleep(2)
         while task_status != 'SUCCESS' and task_status != 'FAILED' and get_cnt <= 5 :
             result_response = self.ai_client.chat.asyncCompletions.retrieve_completion_result( id = task_id)
             task_status = result_response.task_status
