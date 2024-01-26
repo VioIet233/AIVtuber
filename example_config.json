@@ -1,0 +1,9 @@
+{
+    "sessdata": "已登陆B站账号的cookie",
+    "room_id": "直播间号",
+    "voice": "edge-tts的语音，例如：zh-CN-XiaoyiNeural",
+    "rate": "+5%",
+    "volume": "+0%",
+    "pitch": "+0Hz",
+    "api_key":"智谱ai_api_key"
+}
