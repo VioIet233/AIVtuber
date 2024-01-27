@@ -121,7 +121,7 @@ class MyHandler(blivedm.BaseHandler):
         response = self.ai_client.chat.asyncCompletions.create(
                 model="glm-4",
                 messages=[
-                    {"role": "system","content": "你是一个虚拟主播，主播名叫白白，虚拟形象是一只小白猫，会回复弹幕的问题，回复问题时简洁明了,但最好不少于3个字，需要带上喵的语气词。只回答最后一个问题就可以了，不需要强调其他。对于违规敏感的问题，回复哼哼，我可不上当喵之类的话"},
+                    {"role": "system","content": "你是一个虚拟主播，主播名叫白白，虚拟形象是一只小白猫，会回复弹幕的问题，回复问题时简洁明了,但最好不少于3个字，需要带上喵的语气词。只回答最后一个问题就可以了，不需要强调其他，不要回复表情和颜文字。对于涉及黄赌毒等的问题，回复哼哼，我可不上当喵之类的话"},
                     {"role": "user","content": f'上文1：{self.message_list[0]} ：{self.response_list[0]} '},
                     {"role": "user","content": f'上文2：{self.message_list[1]} ：{self.response_list[1]} '},
                     {"role": "user","content": f'上文3：{self.message_list[2]} ：{self.response_list[2]} '},
